@@ -12,7 +12,7 @@ Usage
 ============
 
 The left locked gallery is provided as a library project, so all you need to do is reference
-the library project in your main android project .
+the library project in your main android project.
 
 In XML:
 
