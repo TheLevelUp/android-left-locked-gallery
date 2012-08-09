@@ -1248,6 +1248,7 @@ public final class Gallery extends AbsSpinner implements GestureDetector.OnGestu
     @Override
     public boolean onKeyUp(final int keyCode, final KeyEvent event) {
         switch (keyCode) {
+
         case KeyEvent.KEYCODE_DPAD_CENTER:
         case KeyEvent.KEYCODE_ENTER: {
 
@@ -1280,7 +1281,11 @@ public final class Gallery extends AbsSpinner implements GestureDetector.OnGestu
 
     boolean movePrevious() {
         if (mItemCount > 0 && mSelectedPosition > 0) {
-            scrollToChild(mSelectedPosition - mFirstPosition - 1);
+            /**
+             * used to be scrollToChild(mSelectedPosition - mFirstPosition - 1);
+             * Found that this did not work with trackball/keyboard navigation.
+             */
+            setSelection(mSelectedPosition - 1);
             return true;
         } else {
             return false;
