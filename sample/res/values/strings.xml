@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">LeftLockedGalleryExample</string>
+    <string name="explanation">This is the left aligned gallery. While it is not perfect, you may find it useful as a starting point for your purposes!</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">LeftLockedGallery Example</string>
+
+</resources>

@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.scvngr.levelup.views.gallery.Gallery
+        android:id="@+id/tip_selector_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:background="@drawable/bg_gallery"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:padding="0dip" />
+
+    <TextView
+        android:id="@+id/explanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/explanation" />
+
+</RelativeLayout>
